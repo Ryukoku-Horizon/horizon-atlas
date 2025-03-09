@@ -35,7 +35,7 @@ export default function Link_to_page(props: Props) {
       <div className='relative m-0 ml-0.5 mr-1.5 bottom-0.5'>
         <Image src={`/horizon-atlas/notion_data/eachPage/${url.split("/")[4]}/icon.png`} 
         alt={title} width={3.3} height={3.3} className='w-6 h-auto' />
-        <MdOutlineArrowOutward size={18} className='absolute w-4 h-auto bg-white text-neutral-700 right-[-3px] bottom-[-3px]' style={{clipPath:"inset(3.5px 3.8px 3.8px 3.8px)"}} />
+        <MdOutlineArrowOutward size={18} className='absolute w-4 h-auto text-neutral-700 right-[-2.3px] bottom-[-3px] stroke-1 stroke-white' style={{clipPath:"inset(1px 1px 1px 1px)"}} />
       </div>
       <span className="text-neutral-500 underline">
         {title}
