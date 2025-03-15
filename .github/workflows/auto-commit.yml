@@ -1,8 +1,6 @@
 name: Auto Dummy Commit
 
 on:
-  schedule:
-    - cron: "0 0 * * *"  # 毎日UTC 0時（日本時間9時）に実行
   workflow_dispatch:
 
 jobs:
