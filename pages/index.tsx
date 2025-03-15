@@ -8,24 +8,28 @@ import { GetStaticProps } from 'next';
 import { CurriculumService } from '@/lib/services/CurriculumService';
 import { PageDataService } from '@/lib/services/PageDataService';
 import Header from '@/components/top/header';
+import { IntroductionService } from '@/lib/services/IntroductionService';
+import { Introduction } from '@/types/introduction';
 
 type Props = {
   pageNum:number;
+  allIntroduction:Introduction[]
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-
   const allCurriculumid:string[] = await CurriculumService.getAllCurriculumId();
   const allChildId = await PageDataService.getChildPageIds();
-  const pageNum = allCurriculumid.length + allChildId.length
+  const pageNum = allCurriculumid.length + allChildId.length;
+  const allIntroduction:Introduction[] = await IntroductionService.getAllIntroduction();
   return {
     props:{
       pageNum,
+      allIntroduction
     },
   };
 };
 
-export default function Home({pageNum}:Props) {
+export default function Home({pageNum,allIntroduction}:Props) {
   return (
     <div className="min-h-screen text-gray-900 diagonal-bg">
       <Head>
@@ -71,7 +75,7 @@ export default function Home({pageNum}:Props) {
           <div className='mt-2 text-sm text-gray-50'>⚠️Horizonサーバーのメンバーアカウントのみログインできます</div>
         </section>
         <About />
-        <Curriculums pageNum={pageNum} />
+        <Curriculums pageNum={pageNum} allIntroduction={allIntroduction} />
       </main>
 
       <footer className="bg-gray-200 text-gray-700 py-4 text-center">

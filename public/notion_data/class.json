@@ -1,0 +1,82 @@
+[
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "default_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "gray_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "brown_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "orange_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "yellow_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "green_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "blue_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "purple_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "pink_background",
+    "parent": "> ssssかか"
+  },
+  {
+    "icon": {
+      "type": "emoji",
+      "emoji": "🆕"
+    },
+    "color": "red_background",
+    "parent": "> ssssかか"
+  }
+]

@@ -25,18 +25,30 @@ jobs:
       - name: 依存関係をインストール
         run: npm install
 
+      - name: Run script
+        run: node updateScript/checkEdited.js
+        env:
+          NOTION_TOKEN_HORIZON: ${{secrets.NOTION_TOKEN_HORIZON}}
+          NOTION_DB_ID_HORIZON: ${{secrets.NOTION_DB_ID_HORIZON}}
+          SUPABASE_ANON_KEY: ${{secrets.SUPABASE_ANON_KEY}}
+          SUPABASE_URL: ${{secrets.SUPABASE_URL}}
+          IFRAMELY_API_KEY: ${{secrets.IFRAMELY_API_KEY}}
+      
+      - name: Commit and push if changes exist
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update Notion data [skip ci]"
+          git push
+
       - name: Next.js をビルド
+        if: success()
         run: npm run build
         env:
-          NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
-          NEXT_PUBLIC_GUILD_ID: ${{ secrets.NEXT_PUBLIC_GUILD_ID}}
-          DISCORD_CLIENT_SECRET: ${{ secrets.DISCORD_CLIENT_SECRET}}
-          DISCORD_CLIENT_ID: ${{ secrets.DISCORD_CLIENT_ID}}
-          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET}}
           NEXT_PUBLIC_AUTH0_DOMAIN: ${{secrets.NEXT_PUBLIC_AUTH0_DOMAIN}}
           NEXT_PUBLIC_AUTH0_CLIENT_ID: ${{secrets.NEXT_PUBLIC_AUTH0_CLIENT_ID}}
           NEXT_PUBLIC_ROOT_PATH: ${{secrets.NEXT_PUBLIC_ROOT_PATH}}
-          BOT_TOKEN: ${{secrets.BOT_TOKEN}}
           SUPABASE_ANON_KEY: ${{secrets.SUPABASE_ANON_KEY}}
           SUPABASE_URL: ${{secrets.SUPABASE_URL}}
           NEXT_PUBLIC_RAILWAY_URL: ${{secrets.NEXT_PUBLIC_RAILWAY_URL}}

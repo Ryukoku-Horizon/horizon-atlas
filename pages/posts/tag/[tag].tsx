@@ -7,9 +7,11 @@ import { HOME_NAV } from "@/constants/pageNavs";
 import { pageNav } from "@/types/pageNav";
 import Layout from "@/components/Layout/Layout";
 import Tags from "@/components/tag/Tags";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NUMBER_OF_POSTS_PER_PAGE } from "@/constants/numberOfPage";
 import { CurriculumService } from "@/lib/services/CurriculumService";
+import { getIcon } from "@/lib/getIconAndCover";
+import { IconData } from "@/types/iconData";
 
 type pagePath = {
     params: { tag:string }
@@ -57,22 +59,39 @@ export const getStaticProps: GetStaticProps = async (context) => {
 const TagPageList = ({ posts, currentTag,allTags}: Props)=> {
     const tagSearchNav:pageNav = {title:`タグ検索：${currentTag}`,id:`/posts/tag/${currentTag}`};
     const [currentPage, setCurrentPage] = useState(1);
+    const [icon,setIcon] = useState<IconData[]>([]);
     const numberOfPages = calculatePageNumber(posts);
     const postsPerPage = NUMBER_OF_POSTS_PER_PAGE;
+    useEffect(()=>{
+        async function setIconData(){
+            const icon= await Promise.all(posts.map(async(post)=>{
+                const icon = await getIcon(post.curriculumId,post.curriculumId)
+                return {
+                    postId:post.curriculumId,
+                    icon
+                }
+            }))
+            setIcon(icon)
+        }
+        setIconData();
+    },[posts])
+
     return (
         <Layout pageNavs={[HOME_NAV,tagSearchNav]}>
             <div className="h-full w-full mx-auto font-mono">
                 <main className="mt-20 mx-5 md:mx-16 mb-3 pt-4">
                     <Tags allTags={allTags} />
                     <section className="pt-5">
-                        {posts.slice(postsPerPage * (currentPage - 1), postsPerPage * currentPage).map((post:PostMetaData, i:number)=>(
-                        <div key={i}>
-                            <SinglePost
-                                postData={post}
-                                isPagenationPage={true}
-                            />
-                        </div>
-                        ))}
+                        {posts.slice(postsPerPage * (currentPage - 1), postsPerPage * currentPage).map((post)=>{
+                            const targetIcon = icon.filter((item)=>item.postId===post.curriculumId)
+                            return (
+                                <div key={post.curriculumId}>
+                                    <SinglePost
+                                        postData={post}
+                                        icon= {(targetIcon[0] !==undefined && targetIcon[0].icon !== undefined) ? targetIcon[0].icon : {type:"",url:"/horizon-atlas/file_icon.svg"}}
+                                    />
+                                </div>
+                        )})}
                     </section>
                 </main>
                 <Pagenation numberOfPage={numberOfPages} currentPage={currentPage} setPage={setCurrentPage} />

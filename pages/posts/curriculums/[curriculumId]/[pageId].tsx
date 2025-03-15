@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
 import { PostMetaData } from '@/types/postMetaData';
 import { MdBlock } from 'notion-to-md/build/types';
 import MdBlockComponent from '@/components/mdBlocks/mdBlock';
@@ -11,6 +11,7 @@ import { CurriculumService } from '@/lib/services/CurriculumService';
 import { PageDataService } from '@/lib/services/PageDataService';
 import useCurriculumIdStore from '@/stores/curriculumIdStore';
 import SideBlock from '@/components/SideBlock/SideBlock';
+import { getIcon } from '@/lib/getIconAndCover';
 
 type postPath = {
   params: { curriculumId:string,pageId:string }
@@ -76,7 +77,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
           pageNavs:[...pageNavs,...childPageNavs],
           childrenData,
           pageId,
-          title
+          title,
         }
       }
     }
@@ -86,22 +87,32 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       mdBlocks,
       pageNavs,
       pageId,
-      title:singlePost.title
+      title:singlePost.title,
     },
   };
 };
 
 const Post =({ metadata, mdBlocks,pageNavs,childrenData,pageId,title}: Props) => {
   const { setCurriculumId } = useCurriculumIdStore();
+  const [icon,setIcon] = useState({type:"",url:""})
   useEffect(()=>{
     setCurriculumId(metadata.curriculumId);
   },[metadata.curriculumId])
+  useEffect(()=>{
+    async function setIconAndCover(){
+      const icon_ = await getIcon(pageId,metadata.curriculumId);
+      console.log("icon",icon_)
+      setIcon(icon_)
+    } 
+    setIconAndCover();
+  },[pageId,metadata.curriculumId])
   return (
     <Layout pageNavs={pageNavs} sideNavProps={childrenData}>
       <div className='p-4 pt-24 pb-8'>
         <section className={childrenData ? 'p-5 bg-white pb-10 md:w-3/4' : "p-5 bg-white pb-10"}>
           <div className='flex'>
-          {pageId === metadata.curriculumId && <Image src={`/horizon-atlas/notion_data/eachPage/${metadata.curriculumId}/icon.png`} alt={''} width={20} height={20} className='relative w-auto h-8 m-0 mr-2 top-0.5' />}
+          {icon.type !== "emoji" && <Image src={icon.url} alt={''} width={20} height={20} className='relative w-auto h-8 m-0 mr-2 top-0.5' />}
+          {icon.type === "emoji" && <p className='relative w-auto h-8 m-0 mr-2 top-0.5 text-3xl'>{icon.url}</p>}
             <h2 className='w-full text-2xl font-medium'>{title}</h2>
           </div>
           <div className='border-b mt-2'></div>

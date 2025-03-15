@@ -1,11 +1,13 @@
+import { Introduction } from '@/types/introduction';
 import { motion } from 'framer-motion'
 import React from 'react'
 
 type Props = {
   pageNum: number;
+  allIntroduction:Introduction[]
 }
 
-function Curriculums({ pageNum }: Props) {
+function Curriculums({ pageNum,allIntroduction }: Props) {
   return (
     <section id="curriculums" className="py-20 bg-gray-50 px-8">
         <h3 className="text-3xl font-bold text-gray-800 text-center">curriculums</h3>
@@ -17,11 +19,7 @@ function Curriculums({ pageNum }: Props) {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-        {[
-            { title: 'Python基礎文法', description: 'pythonの基礎文法を通してプログラミングの基本を学ぶ' },
-            { title: 'Flet', description: 'Flelを使って実際にアプリケーションを作成する' },
-            { title: 'Git、GitHub基礎', description: 'Git/GitHubの学習を通して、バージョン管理やチーム開発の方法を学ぶ' },
-        ].map((curriculum, index) => (
+        {allIntroduction.map((curriculum, index) => (
             <motion.div 
             key={index} 
             className="bg-white rounded-xl shadow-lg p-6 text-left"

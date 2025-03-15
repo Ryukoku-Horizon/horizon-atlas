@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useRouter } from "next/router";
 import { CustomUser } from "@/global";
+import { Loader2 } from "lucide-react";
 
 type LayoutProps = {
   children: ReactNode;
@@ -23,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageNavs, sideNavProps }) => 
   const [isVisible, setIsVisible] = useState(true); // ヘッダーの表示状態
   const [lastScrollY, setLastScrollY] = useState(0); // 最後のスクロール位置
   const [openbar, setOpenbar] = useState(false);
-  const { isAuthenticated,user,logout } = useAuth0();
+  const { isAuthenticated,user,logout,isLoading } = useAuth0();
 
   useEffect(()=>{
     if(isAuthenticated){
@@ -39,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageNavs, sideNavProps }) => 
       }
       checkGuild();
     }
-  },[isAuthenticated,user])
+  },[isAuthenticated,user,isLoading])
 
   useEffect(() => {
     if (window !== undefined) {
@@ -63,6 +64,9 @@ const Layout: React.FC<LayoutProps> = ({ children, pageNavs, sideNavProps }) => 
     }
   }, [lastScrollY]);
 
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
   if(!isAuthenticated){
     return <LoginModal />
   }
@@ -110,6 +114,15 @@ function LoginModal() {
           OK
         </button>
       </div>
+    </div>
+  );
+}
+
+function LoadingScreen() {
+  return (
+    <div className="flex flex-col items-center gap-4">
+      <Loader2 className="animate-spin text-purple-400" size={48} />
+      <p className="text-lg font-semibold text-gray-700">読み込み中...</p>
     </div>
   );
 }

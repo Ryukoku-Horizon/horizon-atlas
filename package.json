@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.3.0",
-    "@notionhq/client": "^2.2.15",
+    "@notionhq/client": "^2.2.16",
     "@tailwindcss/line-clamp": "^0.4.4",
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",

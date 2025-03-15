@@ -7,6 +7,8 @@ import type { GetStaticProps,} from "next";
 import { CurriculumService } from "@/lib/services/CurriculumService";
 import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { getIcon } from "@/lib/getIconAndCover";
+import { IconData } from "@/types/iconData";
 
 type Props={
     courseAndPosts: {
@@ -36,6 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function BasicCoursePageList({courseAndPosts}: Props){
     const [dataByRole,setDataByRole] = useState(courseAndPosts);
+    const [icon,setIcon]= useState<IconData[]>([]);
     const { user } = useAuth0();
     useEffect(()=>{
         async function setData(){
@@ -52,6 +55,22 @@ export default function BasicCoursePageList({courseAndPosts}: Props){
         }
         setData();
     },[courseAndPosts,user])
+    useEffect(()=>{
+        async function setIconData(){
+            const iconList:IconData[] = [];
+            for(const item of courseAndPosts){
+                for(const post of item.posts){
+                    const icon_ = await getIcon(post.curriculumId, post.curriculumId)
+                    iconList.push({
+                        postId:post.curriculumId,
+                        icon:icon_
+                    })
+                }
+            }
+            setIcon(iconList)
+        }
+        setIconData()
+    },[courseAndPosts])
 
     return (
         <Layout pageNavs={[HOME_NAV,BASIC_NAV]}>
@@ -59,9 +78,9 @@ export default function BasicCoursePageList({courseAndPosts}: Props){
                 <main className="w-full mt-16 mb-3">
                     <h1 className="text-5xl font-medium text-center mb-16">基礎班カリキュラム</h1>
                     <section className="gap-3 mx-auto">
-                        {dataByRole.map((courseAndPosts,i)=>
-                            <SingleCourse course={courseAndPosts.course} posts={courseAndPosts.posts} key={i} />
-                        )}
+                        {dataByRole.map((courseAndPosts,i)=>{
+                            return (<SingleCourse course={courseAndPosts.course} posts={courseAndPosts.posts} key={i} icons={icon} />)
+                        })}
                     </section>
                 </main>
             </div>
