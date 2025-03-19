@@ -1,60 +1,45 @@
 {
-  "object": "page",
-  "id": "1b5a501e-f337-80a2-a765-e65e7080be6f",
-  "created_time": "2025-03-13T08:04:00.000Z",
-  "last_edited_time": "2025-03-13T08:49:00.000Z",
-  "created_by": {
-    "object": "user",
-    "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
-  },
-  "last_edited_by": {
-    "object": "user",
-    "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
-  },
-  "cover": {
-    "type": "external",
-    "external": {
-      "url": "https://www.notion.so/images/page-cover/rijksmuseum_jansz_1636.jpg"
-    }
-  },
   "icon": {
-    "type": "external",
-    "external": {
-      "url": "https://www.notion.so/icons/movie-clapboard_yellow.svg"
+    "type": "emoji",
+    "emoji": "🆕"
+  },
+  "color": "yellow_background",
+  "parent": [
+    {
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "orange"
+      },
+      "plain_text": "ああ",
+      "href": null
+    },
+    {
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "orange"
+      },
+      "plain_text": "あ",
+      "href": null
+    },
+    {
+      "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "orange"
+      },
+      "plain_text": "ああ",
+      "href": null
     }
-  },
-  "parent": {
-    "type": "page_id",
-    "page_id": "1ada501e-f337-818b-b108-d75c192b26c9"
-  },
-  "archived": false,
-  "in_trash": false,
-  "properties": {
-    "title": {
-      "id": "title",
-      "type": "title",
-      "title": [
-        {
-          "type": "text",
-          "text": {
-            "content": "1. Hello World!",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "1. Hello World!",
-          "href": null
-        }
-      ]
-    }
-  },
-  "url": "https://www.notion.so/1-Hello-World-1b5a501ef33780a2a765e65e7080be6f",
-  "public_url": null,
-  "request_id": "562cf93d-e671-4e9e-bbf5-2923bd87516f"
+  ]
 }

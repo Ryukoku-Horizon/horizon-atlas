@@ -1,82 +1,56 @@
 [
   {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "default_background",
-    "parent": "> ssssかか"
+    "parent": [
+      {
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "ああああ",
+        "href": null
+      }
+    ],
+    "color": "default",
+    "is_toggleable": false
   },
   {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "gray_background",
-    "parent": "> ssssかか"
+    "parent": [
+      {
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "ああああ",
+        "href": null
+      }
+    ],
+    "color": "default",
+    "is_toggleable": false
   },
   {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "brown_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "orange_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "yellow_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "green_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "blue_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "purple_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "pink_background",
-    "parent": "> ssssかか"
-  },
-  {
-    "icon": {
-      "type": "emoji",
-      "emoji": "🆕"
-    },
-    "color": "red_background",
-    "parent": "> ssssかか"
+    "parent": [
+      {
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "ああああ",
+        "href": null
+      }
+    ],
+    "color": "default",
+    "is_toggleable": false
   }
 ]
