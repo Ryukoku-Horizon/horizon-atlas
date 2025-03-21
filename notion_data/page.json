@@ -1,45 +1,330 @@
 {
-  "icon": {
-    "type": "emoji",
-    "emoji": "🆕"
-  },
-  "color": "yellow_background",
-  "parent": [
+  "object": "list",
+  "results": [
     {
-      "annotations": {
-        "bold": false,
-        "italic": false,
-        "strikethrough": false,
-        "underline": false,
-        "code": false,
-        "color": "orange"
+      "object": "block",
+      "id": "1bda501e-f337-80cb-a1fe-e0f19ddce59b",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bda501e-f337-800f-92ae-d3ed0ce14adc"
       },
-      "plain_text": "ああ",
-      "href": null
+      "created_time": "2025-03-21T05:55:00.000Z",
+      "last_edited_time": "2025-03-21T06:15:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "table_row",
+      "table_row": {
+        "cells": [
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "設定できる場所",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "設定できる場所",
+              "href": null
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "説明",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "説明",
+              "href": null
+            }
+          ]
+        ]
+      }
     },
     {
-      "annotations": {
-        "bold": false,
-        "italic": false,
-        "strikethrough": false,
-        "underline": false,
-        "code": true,
-        "color": "orange"
+      "object": "block",
+      "id": "1bda501e-f337-80af-80b5-db3934b79f0b",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bda501e-f337-800f-92ae-d3ed0ce14adc"
       },
-      "plain_text": "あ",
-      "href": null
+      "created_time": "2025-03-21T05:55:00.000Z",
+      "last_edited_time": "2025-03-21T06:14:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "table_row",
+      "table_row": {
+        "cells": [
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "サーバー全体",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "サーバー全体",
+              "href": null
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "そのサーバー内のすべての通知が来る。",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "そのサーバー内のすべての通知が来る。",
+              "href": null
+            }
+          ]
+        ]
+      }
     },
     {
-      "annotations": {
-        "bold": true,
-        "italic": false,
-        "strikethrough": false,
-        "underline": false,
-        "code": false,
-        "color": "orange"
+      "object": "block",
+      "id": "1bda501e-f337-80a2-8c98-d0200b38c381",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bda501e-f337-800f-92ae-d3ed0ce14adc"
       },
-      "plain_text": "ああ",
-      "href": null
+      "created_time": "2025-03-21T05:55:00.000Z",
+      "last_edited_time": "2025-03-21T05:55:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "table_row",
+      "table_row": {
+        "cells": [
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "カテゴリごと",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "カテゴリごと",
+              "href": null
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "そのカテゴリに含まれるすべてのチャンネルの通知が来る。",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "そのカテゴリに含まれるすべてのチャンネルの通知が来る。",
+              "href": null
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bda501e-f337-80ef-8a92-f09ee5ad3dd7",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bda501e-f337-800f-92ae-d3ed0ce14adc"
+      },
+      "created_time": "2025-03-21T05:55:00.000Z",
+      "last_edited_time": "2025-03-21T05:55:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "table_row",
+      "table_row": {
+        "cells": [
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "チャンネルごと",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "チャンネルごと",
+              "href": null
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "そのチャンネルの通知のみ来る。",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "そのチャンネルの通知のみ来る。",
+              "href": null
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "1bda501e-f337-808e-a2b6-f28db29076ca",
+      "parent": {
+        "type": "block_id",
+        "block_id": "1bda501e-f337-800f-92ae-d3ed0ce14adc"
+      },
+      "created_time": "2025-03-21T05:55:00.000Z",
+      "last_edited_time": "2025-03-21T05:55:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "table_row",
+      "table_row": {
+        "cells": [
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "スレッド・フォーラムごと",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "スレッド・フォーラムごと",
+              "href": null
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "text": {
+                "content": "そのスレッド・フォーラム内の通知が来る。",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "そのスレッド・フォーラム内の通知が来る。",
+              "href": null
+            }
+          ]
+        ]
+      }
     }
-  ]
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "block",
+  "block": {},
+  "request_id": "8df49a70-a970-4d6e-897b-555014b188c5"
 }
