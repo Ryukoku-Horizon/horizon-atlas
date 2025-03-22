@@ -1,6 +1,0 @@
-{
-  "ogTitle": "Navigation and routing | Flet",
-  "ogDescription": "Navigation and routing is an essential feature of Single Page Applications (SPA) which allows organizing application user interface into virtual pages (views) and \"navigate\" between them while application URL reflects the current state of the app.",
-  "ogUrl": "https://flet.dev/docs/getting-started/navigation-and-routing",
-  "favicon": "/img/favicon.ico"
-}
