@@ -16,7 +16,6 @@ function wait(ms) {
 export const getEditTimeData = async () => {
     const posts = await notion.databases.query({
         database_id:db,
-        page_size: 100,
         filter: {
             property: "published",
             checkbox: {
@@ -32,7 +31,6 @@ export const getEditTimeData = async () => {
 export const getAllData = async () => {
     const posts = await notion.databases.query({
         database_id:db,
-        page_size: 100,
     });
 
     const allPosts = posts.results;
@@ -121,7 +119,7 @@ export const getSinglePageBlock = async (pageId, retries=10) => {
                 date:date.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" })
             };
         } catch (error) {
-            if (error.status === 429) {
+            if (error.RequestTimeoutError) {
                 console.warn(`Rate limit exceeded. Retrying in ${10} seconds...`);
                 await wait(1000)
             } else {
@@ -138,7 +136,7 @@ export const getSingleblock = async (blockId, retries = 5) => {
             const response = await notion.blocks.retrieve({ block_id: blockId });
             return response;
         } catch (error) {
-            if (error.status === 429) {
+            if (error.RequestTimeoutError) {
                 console.warn(`Rate limit exceeded. Retrying in ${10} seconds...`);
                 await wait(1000)
             } else {
@@ -157,7 +155,7 @@ export const getChildBlocks = async (blockId, retries = 5) => {
             })
             return response;
         } catch (error) {
-            if (error.status === 429) {
+            if (error.RequestTimeoutError) {
                 console.warn(`Rate limit exceeded. Retrying in ${10} seconds...`);
                 await wait(1000)
             } else {

@@ -70,11 +70,6 @@ async function insertPageInfo(curriculumId,pageId,parentId,block,i){
     // 以前の `last_edited_time` と比較
     const lastSavedTime = lastEditedTimes[block.blockId];
 
-    if (lastSavedTime && new Date(lastSavedTime).getTime() === new Date(res.date).getTime()) {
-        console.log(`No changes ${block.parent}, skipping update.`);
-        return false;
-    }
-
     // アイコンとカバー画像を取得
     const pageImage = await getPageImage(curriculumId, pageId, res.cover, res.icon);
 
@@ -128,13 +123,13 @@ export async function insertblock(curriculumId,parentId,blocks,pageId){
             const isEdited = await insertPageInfo(curriculumId,pageId,parentId,blocks[k],i);
             if(isEdited){
                 await deletePage(blocks[k].id)
-                if(blocks[k].children.length!==0){
-                    await insertblock(
-                        curriculumId,
-                        blocks[k].blockId,
-                        blocks[k].children,
-                        blocks[k].type==="child_page" ? blocks[k].blockId : pageId);
-                }
+            }
+            if(blocks[k].children.length!==0){
+                await insertblock(
+                    curriculumId,
+                    blocks[k].blockId,
+                    blocks[k].children,
+                    blocks[k].blockId);
             }
         }else{
             if(blocks[k].children.length!==0){
@@ -142,7 +137,7 @@ export async function insertblock(curriculumId,parentId,blocks,pageId){
                     curriculumId,
                     blocks[k].blockId,
                     blocks[k].children,
-                    blocks[k].type==="child_page" ? blocks[k].blockId : pageId);
+                    pageId);
             }
             if(blocks[k].type==="callout"){
                 await insertCallout(blocks[k],parentId,curriculumId,pageId,i)

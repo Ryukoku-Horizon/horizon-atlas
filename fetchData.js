@@ -97,6 +97,11 @@ const getSinglePage = async (title) => {
     // return page
 };
 
+const getPage = async (id) => {
+    const mdBlocks =  await n2m.pageToMarkdown(id);
+    return mdBlocks
+};
+
 const getSinglePageData = async (pageId) => {
     const response = await notion.pages.retrieve({
         page_id: pageId,
@@ -123,22 +128,8 @@ const getChildblock = async (blockId) => {
 //     fs.writeFileSync(`./public/notion_data/class.json`, JSON.stringify(data, null, 2))
 // })
 
-getSinglePage("test").then(async(data)=>{
-    for(const item of data.mdBlocks){
-        if(item.type==="table"){
-            getSingleblock(item.blockId).then(async(data)=>{
-                    if(data.has_children){
-                        const res = await getChildblock(item.blockId)
-                        fs.writeFileSync(`./public/notion_data/page.json`, JSON.stringify(res, null, 2))
-                    }
-                    fs.writeFileSync(`./public/notion_data/class.json`, JSON.stringify(data, null, 2))
-                }
-            )
-        }
-    }
-})
-
-
-
+getPage("1bea501ef33780dc9a9cd815e91b852e").then((data)=>
+    fs.writeFileSync(`./public/notion_data/class.json`, JSON.stringify(data, null, 2))
+)
 
 // getAllData().then(data=>fs.writeFileSync(`./public/notion_data/class.json`, JSON.stringify(data, null, 2)))
