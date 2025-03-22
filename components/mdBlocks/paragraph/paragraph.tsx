@@ -10,11 +10,10 @@ import { useRouter } from 'next/router';
 type Props={
     mdBlock:MdBlock;
     depth:number;
-    quote?:boolean;
 }
 
 export default function Paragraph(props:Props){
-    const {mdBlock,depth,quote} = props;
+    const {mdBlock,depth} = props;
     const textData:ParagraphData = JSON.parse(mdBlock.parent)
     const colorProperty = getColorProperty(textData.color);
 
@@ -55,7 +54,7 @@ export default function Paragraph(props:Props){
 
     return (
         <div className='mb-0.5 mt-1' id={mdBlock.blockId}>
-            <p style={colorProperty}>
+            <p style={{...colorProperty,whiteSpace: "pre"}}>
                 {textData.parent.map((text,i)=>{
                     const style = assignCss(text)
                     return (
@@ -63,8 +62,8 @@ export default function Paragraph(props:Props){
                 )})}
                 {textData.parent.length===0 && <span className='opacity-0' >a</span>}
             </p>
-            {(quote===false || quote===undefined) && mdBlock.children.length!==0 && mdBlock.children.map((child,i)=>{
-                return (<div key={i}>
+            {mdBlock.children.map((child,i)=>{
+                return (<div key={i} className='ml-2'>
                     <MdBlockComponent mdBlock={child} depth={depth + 1} />
                 </div>)
             })}

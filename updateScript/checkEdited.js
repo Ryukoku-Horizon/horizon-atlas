@@ -103,7 +103,7 @@ const deleteDatas=async(data)=>{
 getCurrentData().then(async(data)=>{
     if(!data){
         console.log("更新なし");
-        process.exit(1);
+        process.exit(0);
     }
     try{
         const allData = await getAllData();

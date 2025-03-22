@@ -51,8 +51,8 @@ async function insertHeading(curriculumId,pageId,parentId,block,i){
 async function insertParagragh(curriculumId,pageId,parentId,block,i){
     const res = await getSingleblock(block.blockId)
     const data = {
-        color:res.paragraph.color,
-        parent:res.paragraph.rich_text.map((text)=>{
+        color:res[res.type].color,
+        parent:res[res.type].rich_text.map((text)=>{
             return {
                 annotations:text.annotations,
                 plain_text:text.plain_text,
@@ -146,7 +146,7 @@ export async function insertblock(curriculumId,parentId,blocks,pageId){
             }
             if(blocks[k].type==="callout"){
                 await insertCallout(blocks[k],parentId,curriculumId,pageId,i)
-            }else if(blocks[k].type==="paragraph"){
+            }else if(blocks[k].type==="paragraph" || blocks[k].type==="quote" || blocks[k].type==="toggle"){
                 await insertParagragh(curriculumId,pageId,parentId,blocks[k],i)
             }else if(blocks[k].type ==='heading_1' || blocks[k].type ==='heading_2' || blocks[k].type ==='heading_3'){
                 await insertHeading(curriculumId,pageId,parentId,blocks[k],i)

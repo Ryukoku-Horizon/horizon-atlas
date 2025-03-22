@@ -7,7 +7,7 @@ import SearchField from "@/components/SearchField/SearchField";
 import Tags from "@/components/tag/Tags";
 import { CurriculumService } from "@/lib/services/CurriculumService";
 import Link from "next/link";
-import { GiCompass } from "react-icons/gi";
+import { BsCompass } from "react-icons/bs";
 
 type Props = {
   courseAndPosts:{
@@ -52,7 +52,7 @@ const PostsPage = ({ allTags }: Props)=> {
                       <h2 className="text-3xl font-extrabold tracking-wide text-gray-900 group-hover:text-purple-700 transition-colors duration-100">
                         基礎班カリキュラム
                       </h2>
-                      <GiCompass className="text-6xl text-purple-600 hover:text-purple-700 transition-all duration-300 rotate-[-45deg] group-hover:rotate-[660deg] group-hover:scale-[1.03]" />
+                      <BsCompass className="text-6xl text-purple-600 hover:text-purple-700 transition-all duration-300 group-hover:rotate-[660deg] group-hover:scale-[1.03]" />
                     </div>
                     <p className="text-lg text-gray-600/90 mt-3 leading-relaxed">
                       PythonやFletライブラリを通してアプリ開発を学べるカリキュラムです。初心者向けに丁寧に解説します！
