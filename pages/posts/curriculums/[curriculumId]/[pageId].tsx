@@ -137,13 +137,13 @@ const Post =({ metadata, mdBlocks,pageNavs,childrenData,pageId,iconInfo,title,ic
   },[metadata.curriculumId,pageId,iconInfo])
   return (
     <Layout pageNavs={pageNavs} sideNavProps={childrenData}>
-      <div className='p-4 pt-20 pb-8'>
-      {coverUrl!=="" && <Image src={coverUrl} alt={''} width={120} height={120} className='h-48 top-0' style={{width:"100vw"}} />}
-        <section className={'px-3 bg-white pb-10'} style={coverUrl!=="" ? {} : {paddingTop:"1.25rem"}}>
+      <div className='pt-20 pb-8'>
+      {coverUrl!=="" && <Image src={coverUrl} alt={''} width={120} height={120} className='h-56 top-0' style={{width:"100vw"}} />}
+        <section className='px-2 bg-white pb-10' style={coverUrl!=="" ? {} : {paddingTop:"4rem"}}>
           <div>
-          {iconType==="" && <Image src={"/horizon-atlas/file_icon.svg"} alt={''} width={20} height={20} className='relative w-14 h-14 m-0' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}} />}
-          {iconType !== "emoji" && iconType!=="" && <Image src={iconUrl} alt={''} width={20} height={20} className='relative w-14 h-14 m-0' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}} />}
-          {iconType === "emoji" && <p className='relative w-14 h-14 text-6xl' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}}>{iconUrl}</p>}
+          {iconType==="" && <Image src={"/horizon-atlas/file_icon.svg"} alt={''} width={20} height={20} className='relative w-12 h-12 sm:w-14 sm:h-14 m-0' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}} />}
+          {iconType !== "emoji" && iconType!=="" && <Image src={iconUrl} alt={''} width={20} height={20} className='relative w-12 h-12 sm:w-14 sm:h-14 m-0' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}} />}
+          {iconType === "emoji" && <p className='relative w-12 h-12 sm:w-14 sm:h-14 text-5xl sm:text-6xl' style={coverUrl!=="" ? {top:"-25px",left:"3px"} : {marginBottom:"1.25rem"}}>{iconUrl}</p>}
             <h2 className='w-full text-3xl font-bold'>{title}</h2>
           </div>
           <div className='border-b mt-2'></div>
