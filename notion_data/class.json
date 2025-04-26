@@ -1,45 +1,1331 @@
-{
-  "object": "block",
-  "id": "1c0a501e-f337-8031-a8fb-c1b1cfb878c8",
-  "parent": {
-    "type": "page_id",
-    "page_id": "1ada501e-f337-818b-b108-d75c192b26c9"
+[
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-80ca-8538-fc212838a9ef",
+    "parent": {
+      "type": "page_id",
+      "page_id": "1ada501e-f337-818b-b108-d75c192b26c9"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": true,
+    "archived": false,
+    "in_trash": false,
+    "type": "table",
+    "table": {
+      "table_width": 2,
+      "has_column_header": false,
+      "has_row_header": false
+    }
   },
-  "created_time": "2025-03-24T02:22:00.000Z",
-  "last_edited_time": "2025-03-25T06:14:00.000Z",
-  "created_by": {
-    "object": "user",
-    "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-809f-bebf-f3fea0857eb7",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "システム(低レイヤー)",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "システム(低レイヤー)",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "C",
+              "link": {
+                "url": "/1e0a501ef337807d8d51ffdbd5aa590b"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "yellow"
+            },
+            "plain_text": "C",
+            "href": "/1e0a501ef337807d8d51ffdbd5aa590b"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C++",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "C++",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Rust",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "gray"
+            },
+            "plain_text": "Rust",
+            "href": null
+          }
+        ]
+      ]
+    }
   },
-  "last_edited_by": {
-    "object": "user",
-    "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-8021-879b-ccbc2d7648bc",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "Webアプリケーション",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Webアプリケーション",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "HTML",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "orange"
+            },
+            "plain_text": "HTML",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "CSS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "CSS",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "JavaScript(Node.js)",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "green"
+            },
+            "plain_text": "JavaScript(Node.js)",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "TypeScript",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "TypeScript",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "PHP",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "purple"
+            },
+            "plain_text": "PHP",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "GO",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "GO",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "JAVA",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "JAVA",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Ruby",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "pink"
+            },
+            "plain_text": "Ruby",
+            "href": null
+          }
+        ]
+      ]
+    }
   },
-  "has_children": false,
-  "archived": false,
-  "in_trash": false,
-  "type": "bookmark",
-  "bookmark": {
-    "caption": [
-      {
-        "type": "text",
-        "text": {
-          "content": "kkmmm",
-          "link": null
-        },
-        "annotations": {
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default"
-        },
-        "plain_text": "kkmmm",
-        "href": null
-      }
-    ],
-    "url": "https://forms.gle/uCzSssAoLUihc8QM8"
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-8074-b048-d75c6af0a997",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "GUIアプリケーション",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GUIアプリケーション",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "Java",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "Java",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C#",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "purple"
+            },
+            "plain_text": "C#",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Python",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "Python",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Swift",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "Swift",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Node.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "green"
+            },
+            "plain_text": "Node.js",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Dart",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "orange"
+            },
+            "plain_text": "Dart",
+            "href": null
+          }
+        ]
+      ]
+    }
   },
-  "request_id": "354c7673-bc3e-4fac-b2ae-103c5e4ddcc1"
-}
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-8063-8616-e2e11dc090d0",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "ゲーム",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ゲーム",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "C",
+              "link": {
+                "url": "/1e0a501ef337807d8d51ffdbd5aa590b"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "yellow"
+            },
+            "plain_text": "C",
+            "href": "/1e0a501ef337807d8d51ffdbd5aa590b"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ",",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ",",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C++",
+              "link": {
+                "url": "/1e0a501ef33780afba2ce028d73d0c32"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "C++",
+            "href": "/1e0a501ef33780afba2ce028d73d0c32"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C#",
+              "link": {
+                "url": "/1e0a501ef33780c2bdb7e83ebc6675f6"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "C#",
+            "href": "/1e0a501ef33780c2bdb7e83ebc6675f6"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Java",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "Java",
+            "href": null
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-80f4-bc12-c89a44f4c99e",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "3Dゲームエンジン",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "3Dゲームエンジン",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unity(",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unity(",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C#",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "purple"
+            },
+            "plain_text": "C#",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "), Unreal Engine(",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "), Unreal Engine(",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "C++",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "C++",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ")",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ")",
+            "href": null
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-8052-b0ba-c1cf8cdd99a5",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "データベース",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "データベース",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "SQL",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "SQL",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "(MySQL, SQLite, PostgresSQL)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "(MySQL, SQLite, PostgresSQL)",
+            "href": null
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-80a1-ad2f-daacaf21999c",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "モバイル",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "モバイル",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "Swift",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "Swift",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Kotlin",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "purple"
+            },
+            "plain_text": "Kotlin",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Dart",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "orange"
+            },
+            "plain_text": "Dart",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Node.js",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "green"
+            },
+            "plain_text": "Node.js",
+            "href": null
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "id": "1e1a501e-f337-80d5-a1f4-c2b8658faafe",
+    "parent": {
+      "type": "block_id",
+      "block_id": "1e1a501e-f337-80ca-8538-fc212838a9ef"
+    },
+    "created_time": "2025-04-26T21:29:00.000Z",
+    "last_edited_time": "2025-04-26T21:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+      "cells": [
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "統計、データ分析、AI",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "統計、データ分析、AI",
+            "href": null
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": {
+              "content": "Python",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "blue"
+            },
+            "plain_text": "Python",
+            "href": null
+          }
+        ]
+      ]
+    }
+  }
+]
