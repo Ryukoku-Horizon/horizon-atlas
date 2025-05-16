@@ -1,0 +1,30 @@
+{
+  "url": "https://flet.dev/docs/controls/buttons/",
+  "meta": {
+    "description": "Live example",
+    "title": "Buttons | Flet",
+    "medium": "link",
+    "canonical": "https://flet.dev/docs/controls/buttons"
+  },
+  "links": {
+    "icon": [
+      {
+        "href": "https://flet.dev/img/favicon.ico",
+        "rel": [
+          "icon",
+          "ssl"
+        ],
+        "type": "image/icon"
+      }
+    ]
+  },
+  "rel": [
+    "summary",
+    "card",
+    "inline",
+    "html5",
+    "ssl",
+    "hosted"
+  ],
+  "html": "<div><div style=\"left: 0; width: 100%; height: 140px; position: relative;\"><iframe src=\"https://cdn.iframe.ly/api/iframe?app=1&url=https%3A%2F%2Fflet.dev%2Fdocs%2Fcontrols%2Fbuttons%2F&key=4e6ba68a2c8e94ac2b6de1bba73c40f1\" style=\"top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;\" allowfullscreen></iframe></div></div><script async src=\"https://cdn.iframe.ly/embed.js\" charset=\"utf-8\"></script>"
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://qiita.com/obukhov/items/9419105c0b810fccad09",
+  "meta": {
+    "description": "blend_mode=flet.BlendMode.SRC 実際の色の見え方はBlendモードに依存します。デフォルトのBlendモードはMODULATEで、各要素のbgcolorの見え方がPag…",
+    "title": "[Python] flet.colorsで簡便に利用できる色の一覧 - Qiita",
+    "medium": "article",
+    "keywords": "Python,Flet",
+    "theme-color": "#ffffff",
+    "canonical": "https://qiita.com/obukhov/items/9419105c0b810fccad09",
+    "site": "Qiita"
+  },
+  "links": {
+    "thumbnail": [
+      {
+        "href": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.0.0%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyODQxODc0JTJGYjBiYjA1ZjhjNWJmNGJmMjE4YmRmZDQ0NTVjYmYyMjZiNmY3NWMxNiUyRmxhcmdlLnBuZyUzRjE2NjI3NzYyMjg_aXhsaWI9cmItNC4wLjAmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmZtPXBuZzMyJnM9ZjUyMjllMmRjMTI1MDIyNDhmOWM2ZTM5NzVlYjJjMDc%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db750687f45167aa77cec3b68617babbf?ixlib=rb-4.0.0&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTk2MCZoPTMyNCZ0eHQ9JTVCUHl0aG9uJTVEJTIwZmxldC5jb2xvcnMlRTMlODElQTclRTclQjAlQTElRTQlQkUlQkYlRTMlODElQUIlRTUlODglQTklRTclOTQlQTglRTMlODElQTclRTMlODElOEQlRTMlODIlOEIlRTglODklQjIlRTMlODElQUUlRTQlQjglODAlRTglQTYlQTcmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz02MTQ0MjM2ODM5NjhkNTAzOTYxZGU5NmEwYjJlYzE1ZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTgzOCZoPTU4JnR4dD0lNDBvYnVraG92JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZDc2OTZhYjBmMzk2NTcyNTY0ZmFkMWFjODQwYTFiZjQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ca4123193594495c8d10e419bfa9763b",
+        "type": "image/jpg",
+        "rel": [
+          "thumbnail",
+          "og",
+          "ssl"
+        ],
+        "content_length": 40487,
+        "media": {
+          "width": 1200,
+          "height": 630
+        }
+      }
+    ],
+    "icon": [
+      {
+        "href": "https://cdn.qiita.com/assets/favicons/public/production-c620d3e403342b1022967ba5e3db1aaa.ico",
+        "rel": [
+          "icon",
+          "ssl"
+        ],
+        "type": "image/x-icon"
+      },
+      {
+        "href": "https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+        "rel": [
+          "apple-touch-icon",
+          "icon",
+          "ssl"
+        ],
+        "type": "image/png"
+      }
+    ]
+  },
+  "rel": [
+    "summary",
+    "card",
+    "inline",
+    "html5",
+    "ssl",
+    "hosted"
+  ],
+  "html": "<div><div style=\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 52.5%; padding-top: 120px;\"><iframe src=\"https://cdn.iframe.ly/api/iframe?app=1&url=https%3A%2F%2Fqiita.com%2Fobukhov%2Fitems%2F9419105c0b810fccad09&key=4e6ba68a2c8e94ac2b6de1bba73c40f1\" style=\"top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;\" allowfullscreen></iframe></div></div><script async src=\"https://cdn.iframe.ly/embed.js\" charset=\"utf-8\"></script>",
+  "options": {
+    "card": {
+      "value": "",
+      "values": {
+        "small": "Make it a small card"
+      }
+    }
+  }
+}
