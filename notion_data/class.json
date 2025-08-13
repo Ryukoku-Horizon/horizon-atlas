@@ -1,109 +1,45 @@
 {
-  "object": "page",
-  "id": "200a501e-f337-80ff-b3a9-ed1bd068b618",
-  "created_time": "2025-05-27T13:58:00.000Z",
-  "last_edited_time": "2025-05-28T07:51:00.000Z",
+  "object": "block",
+  "id": "24ea501e-f337-807f-b5a1-e6f4e37bb375",
+  "parent": {
+    "type": "page_id",
+    "page_id": "24ba501e-f337-80c9-a619-eb7becbd5e8d"
+  },
+  "created_time": "2025-08-13T10:57:00.000Z",
+  "last_edited_time": "2025-08-13T10:57:00.000Z",
   "created_by": {
     "object": "user",
-    "id": "374805a4-b86b-4ab1-992d-33e661089458"
+    "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
   },
   "last_edited_by": {
     "object": "user",
     "id": "81ca8626-c9fd-47c2-a33d-0192ba052029"
   },
-  "cover": null,
-  "icon": {
-    "type": "custom_emoji",
-    "custom_emoji": {
-      "id": "1b6a501e-f337-806d-a971-007aaa599a14",
-      "name": "qiita-team",
-      "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/825fcd9e-9a5c-4f9c-8a97-c45c3a331eeb/qiita-team-icon.png"
-    }
-  },
-  "parent": {
-    "type": "database_id",
-    "database_id": "1ada501e-f337-80e7-afab-c3917c00a689"
-  },
+  "has_children": false,
   "archived": false,
   "in_trash": false,
-  "properties": {
-    "published": {
-      "id": "%3AYCm",
-      "type": "checkbox",
-      "checkbox": true
-    },
-    "tag": {
-      "id": "QcvX",
-      "type": "multi_select",
-      "multi_select": [
-        {
-          "id": "b8c993a8-93f2-4b93-a2a7-8199715cf764",
-          "name": "Qiita Team",
-          "color": "red"
+  "type": "embed",
+  "embed": {
+    "caption": [
+      {
+        "type": "text",
+        "text": {
+          "content": "こんな感じの電卓を作ってほしい！",
+          "link": null
         },
-        {
-          "id": "13c2f83f-05e2-4289-9602-eb2a44318d91",
-          "name": "プログラミング言語",
-          "color": "red"
-        }
-      ]
-    },
-    "category": {
-      "id": "cm_r",
-      "type": "select",
-      "select": null
-    },
-    "is_basic_curriculum": {
-      "id": "hjhJ",
-      "type": "checkbox",
-      "checkbox": false
-    },
-    "visibility": {
-      "id": "kZAd",
-      "type": "multi_select",
-      "multi_select": [
-        {
-          "id": "f46f4625-b2fc-40a0-bfb6-5ae42923a4ba",
-          "name": "発展班",
-          "color": "green"
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
         },
-        {
-          "id": "3dfac14c-6cd0-4dbd-a392-f513d02566a7",
-          "name": "基礎班",
-          "color": "red"
-        }
-      ]
-    },
-    "order": {
-      "id": "nRqP",
-      "type": "number",
-      "number": 2000
-    },
-    "title": {
-      "id": "title",
-      "type": "title",
-      "title": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Qiita Teamへの参加方法（全体向け）",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Qiita Teamへの参加方法（全体向け）",
-          "href": null
-        }
-      ]
-    }
+        "plain_text": "こんな感じの電卓を作ってほしい！",
+        "href": null
+      }
+    ],
+    "url": "https://flet-samples.fly.dev/calculator"
   },
-  "url": "https://www.notion.so/Qiita-Team-200a501ef33780ffb3a9ed1bd068b618",
-  "public_url": null,
-  "request_id": "940f7d11-79ec-46ec-9498-a87d27ae3f7e"
+  "request_id": "fc23f065-69a3-4f51-840d-2c367ffea9a9"
 }
