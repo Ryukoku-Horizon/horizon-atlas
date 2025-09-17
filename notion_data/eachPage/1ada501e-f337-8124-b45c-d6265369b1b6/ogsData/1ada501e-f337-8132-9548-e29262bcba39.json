@@ -1,8 +1,0 @@
-{
-  "ogTitle": "文系大学生のためのHTML／CSS入門",
-  "ogDescription": "文系学科の大学生を対象としたHTML／CSSの入門書です。文系でなくても（大学生ですらなくても）、これから初めてHTML／CSSを勉強する人には参考になるかもしれません。OJKの担当しているHTML／CSSの授業テキストを順次公開しているものです。",
-  "ogSiteName": "Zenn",
-  "ogUrl": "https://zenn.dev/ojk/books/intro-to-html-css",
-  "ImageUrl": "https://res.cloudinary.com/zenn/image/upload/s--KZVoMazU--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYm9va19jb3Zlci8zMDg1NzdmNjk4LmpwZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg",
-  "favicon": "https://static.zenn.studio/images/logo-transparent.png"
-}
