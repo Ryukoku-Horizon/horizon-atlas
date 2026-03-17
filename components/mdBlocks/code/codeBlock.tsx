@@ -24,7 +24,7 @@ import "prismjs/components/prism-docker"
 import "prismjs/components/prism-powershell"
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 import "prismjs/plugins/line-numbers/prism-line-numbers";
-import { renderTextWithBreaks } from "../renderTextWithBreaks";
+import { RenderTextWithBreaks } from "./renderTextWithBreaks";
 import React, { useState } from "react";
 import PlainTextCode from "./languages/plainText";
 import { AtlRichTextEntity } from "@/types/pageData";
@@ -70,7 +70,7 @@ export default function CodeBlock({
     if (typeof token === "string") {
       const styled = [...token].map((char) => {
         const style = notionStyles[index++] || {};
-        return renderTextWithBreaks(char, style);
+        return RenderTextWithBreaks(char, style);
       });
       return <>{styled}</>;
     }
@@ -92,10 +92,30 @@ export default function CodeBlock({
 
 
   return (
+  /* 1. 全体を包むコンテナを relative にする */
+  <div 
+    className="relative group" // groupを追加してホバー判定をここで行う
+    onMouseEnter={() => setIsHovered(true)} 
+    onMouseLeave={() => setIsHovered(false)}
+  >
+    {/* 2. 言語ラベルとコピーボタンは pre の外に出す */}
+    <span className="absolute top-2 left-3 z-10 rounded-md bg-gray-200 px-2 py-0.5 text-[10px] text-gray-600">
+      {language}
+    </span>
+
+    {isHovered && (
+      <button
+        onClick={handleCopy}
+        className="absolute top-2 right-4 z-10 px-2 py-1 text-xs bg-white/50 rounded-md shadow-sm" // z-10で前面に出す
+      >
+        {copied ? <FaClipboardCheck size={20} color="#696969" /> : <FaRegClipboard size={20} color="#c0c0c0" />}
+      </button>
+    )}
+
+    {/* 3. pre はスクロール専用にする */}
     <pre
       className={`
         language-${lan}
-        relative
         p-4
         pl-2
         overflow-x-auto
@@ -106,61 +126,23 @@ export default function CodeBlock({
         rounded-br-lg
         rounded-bl-lg
       `}
-      style={{backgroundColor: "rgb(250,250,250)"}}
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
+      style={{ backgroundColor: "rgb(250,250,250)" }}
     >
-      <span className="absolute top-2 left-3 rounded-md bg-gray-200 px-2 py-0.5 text-[10px] text-gray-600">
-        {language}
-      </span>
-
-      {isHovered && <button
-        onClick={handleCopy}
-        className="
-          absolute
-          top-2
-          right-4
-          px-2
-          py-1
-          text-xs
-        "
-      >
-        {copied ? <FaClipboardCheck size={20} color="#696969" />  :<FaRegClipboard size={20} color="#c0c0c0" />}
-      </button>}
       <div className="mt-7">
-    {lines.map((line, lineIndex) => (
-      <div
-        key={lineIndex}
-        className="
-            group
-            flex
-            hover:bg-gray-100/70
-            rounded-md
-          "
-        >
-        <span
-          className="
-            select-none
-            shrink-0
-            text-xs
-            text-gray-400
-            cursor-default
-            group-hover:text-gray-600
-            justify-items-center
-            w-6
-            text-right
-            pr-3
-            pt-1.5
-          "
-        >{lineIndex + 1}</span>
-          {line.tokens.map((token, i) => (
-          <React.Fragment key={i}>{renderToken(token as Token)}</React.Fragment>
+        {lines.map((line, lineIndex) => (
+          <div key={lineIndex} className="group flex hover:bg-gray-100/70 rounded-md">
+            <span className="select-none shrink-0 text-xs text-gray-400 cursor-default group-hover:text-gray-600 w-6 text-right pr-3 pt-1.5">
+              {lineIndex + 1}
+            </span>
+            {line.tokens.map((token, i) => (
+              <React.Fragment key={i}>{renderToken(token as Token)}</React.Fragment>
+            ))}
+          </div>
         ))}
       </div>
-    ))}
-    </div>
-</pre>
-  );
+    </pre>
+  </div>
+);
   }catch{
     console.log("未読み込み:",lan)
     return (

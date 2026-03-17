@@ -33,7 +33,7 @@ export const HomeMain=({userProfile,categoryAndCurriculums,noCaterizedCurriculum
         try{
           setLoading(true)
           const usersRole = userProfile ? (userProfile.given_name ?? "体験入部") : "ゲスト"
-          if(usersRole !=="幹事長" && usersRole !=="技術部員"){
+          if(usersRole !=="幹事長" && usersRole !=="技術部員" && usersRole!=="admin"){
             const postsByRole = await getPostsByRole(usersRole,noCaterizedCurriculums);
             setPostsByRole(postsByRole);
             const courseByRole = await Promise.all(categoryAndCurriculums.map(async(item)=>{
