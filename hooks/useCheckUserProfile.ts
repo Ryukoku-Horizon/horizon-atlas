@@ -13,7 +13,7 @@ const useCheckRole=(visibility:string[],resourceType:"answer" | "info" | "curric
         try{
             const usersRole = userProfile ? (userProfile.given_name ?? "体験入部") : "ゲスト";
             const isVisible = visibility.some((item)=>item===usersRole || item==="ゲスト")
-            if(!isVisible && usersRole!=="幹事長" && usersRole!=="技術部員"){
+            if(!isVisible && usersRole!=="幹事長" && usersRole!=="技術部員" && usersRole!=="admin"){
                 setNotVisible(true)
             }else{
                 if(resourceType==="answer"){

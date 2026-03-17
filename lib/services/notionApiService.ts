@@ -18,7 +18,7 @@ export const getPostsByTag=async(tagName:string, allPosts:PageInfo[])=>{
 }
 
 export const getPostsByRole=async(roleName:string,pageAndMetadata:PageInfo[])=>{
-    if(roleName==="幹事長" || roleName==="技術部員"){
+    if(roleName==="幹事長" || roleName==="技術部員" || roleName==="admin"){
         return pageAndMetadata
     }
     const posts = pageAndMetadata.filter((post)=>{
