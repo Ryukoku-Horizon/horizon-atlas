@@ -21,7 +21,21 @@ export function usePageLink(){
 
     const handleClick =useCallback((href?:string | null, scroll?:string,is_same_bp?:boolean)=>{
         if(href && href!==""){
-            if(router.asPath===href){
+
+            let targetHref = href;
+            // "posts/curriculums/p/" のような形になっていたら "posts/curriculums/" に直す
+            // (ドメイン付きでも対応できるようにする)
+            if (targetHref.includes("/posts/curriculums/p/")) {
+                targetHref = targetHref.replace("/posts/curriculums/p/", "/posts/curriculums/");
+            }
+            // 自ドメインが含まれている場合は相対パス化
+            const domainAndBase = "https://ryukoku-horizon.github.io/horizon-atlas";
+            if (targetHref.startsWith(domainAndBase)) {
+                targetHref = targetHref.replace(domainAndBase, "");
+            }
+            if (targetHref === "") targetHref = "/";
+
+            if(router.asPath===targetHref){
                 if(scroll){
                     scrollToSection(scroll)
                 }
@@ -29,23 +43,23 @@ export function usePageLink(){
                 if(scroll){
                     if(category && is_same_bp){
                         const query = `?category=${category}`
-                        router.push(`${href}${query}#${scroll}`)
+                        router.push(`${targetHref}${query}#${scroll}`)
                         return;
                     }else{
-                        router.push(`${href}#${scroll}`)
+                        router.push(`${targetHref}#${scroll}`)
                     }
                 }else{
-                    if(href.startsWith("/posts/curriculums") || href.startsWith("https://ryukoku-horizon.github.io/horizon-atlas")){
+                    if(targetHref.startsWith("/posts/curriculums") || targetHref.startsWith("https://ryukoku-horizon.github.io/horizon-atlas")){
                         if(category && is_same_bp){
                             const query = `?category=${category}`
-                            router.push(`${href}${query}`)
+                            router.push(`${targetHref}${query}`)
                             return;
                         }
-                        router.push(`${href}`)
-                    }else if(!href.startsWith("http://") && !href.startsWith("https://")){
+                        router.push(`${targetHref}`)
+                    }else if(!targetHref.startsWith("http://") && !targetHref.startsWith("https://")){
                         return;
                     }else{
-                        window.open(href, '_blank')
+                        window.open(targetHref, '_blank')
                     }
                 }
             }
