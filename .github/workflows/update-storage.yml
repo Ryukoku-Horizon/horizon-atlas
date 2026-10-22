@@ -14,7 +14,8 @@ jobs:
       - name: Node.js をセットアップ
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: .nvmrc
+          check-latest: true
 
       - name: update storage
         run: node ./scripts/updateStorage.js
